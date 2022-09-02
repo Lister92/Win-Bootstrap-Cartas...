@@ -71,6 +71,7 @@ namespace Win_Bootstrap_Cartas
         {
             baraja = baraja.OrderBy(a => random.Next()).ToList();
             ToString();
+
         }
 
     }

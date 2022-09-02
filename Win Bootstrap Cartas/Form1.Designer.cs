@@ -29,23 +29,23 @@ namespace Win_Bootstrap_Cartas
         /// </summary>
         private void InitializeComponent()
         {
-            this.butAceptar = new System.Windows.Forms.Button();
+            this.butBarajar = new System.Windows.Forms.Button();
             this.butSacarCarta = new System.Windows.Forms.Button();
             this.butCartaR = new System.Windows.Forms.Button();
-            this.chkRandom = new System.Windows.Forms.CheckBox();
             this.butNumCartas = new System.Windows.Forms.Button();
             this.listCartas = new System.Windows.Forms.ListBox();
             this.butListaCartas = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // butAceptar
+            // butBarajar
             // 
-            this.butAceptar.Location = new System.Drawing.Point(552, 360);
-            this.butAceptar.Name = "butAceptar";
-            this.butAceptar.Size = new System.Drawing.Size(126, 46);
-            this.butAceptar.TabIndex = 0;
-            this.butAceptar.Text = "Aceptar";
-            this.butAceptar.UseVisualStyleBackColor = true;
+            this.butBarajar.Location = new System.Drawing.Point(394, 281);
+            this.butBarajar.Name = "butBarajar";
+            this.butBarajar.Size = new System.Drawing.Size(126, 46);
+            this.butBarajar.TabIndex = 0;
+            this.butBarajar.Text = "Barajar";
+            this.butBarajar.UseVisualStyleBackColor = true;
+            this.butBarajar.Click += new System.EventHandler(this.butBarajar_Click);
             // 
             // butSacarCarta
             // 
@@ -59,7 +59,7 @@ namespace Win_Bootstrap_Cartas
             // 
             // butCartaR
             // 
-            this.butCartaR.Location = new System.Drawing.Point(235, 360);
+            this.butCartaR.Location = new System.Drawing.Point(394, 207);
             this.butCartaR.Name = "butCartaR";
             this.butCartaR.Size = new System.Drawing.Size(126, 46);
             this.butCartaR.TabIndex = 3;
@@ -67,19 +67,9 @@ namespace Win_Bootstrap_Cartas
             this.butCartaR.UseVisualStyleBackColor = true;
             this.butCartaR.Click += new System.EventHandler(this.butCartaR_Click);
             // 
-            // chkRandom
-            // 
-            this.chkRandom.AutoSize = true;
-            this.chkRandom.Location = new System.Drawing.Point(78, 315);
-            this.chkRandom.Name = "chkRandom";
-            this.chkRandom.Size = new System.Drawing.Size(122, 21);
-            this.chkRandom.TabIndex = 5;
-            this.chkRandom.Text = "Randomizador";
-            this.chkRandom.UseVisualStyleBackColor = true;
-            // 
             // butNumCartas
             // 
-            this.butNumCartas.Location = new System.Drawing.Point(78, 360);
+            this.butNumCartas.Location = new System.Drawing.Point(394, 118);
             this.butNumCartas.Name = "butNumCartas";
             this.butNumCartas.Size = new System.Drawing.Size(126, 46);
             this.butNumCartas.TabIndex = 6;
@@ -91,14 +81,14 @@ namespace Win_Bootstrap_Cartas
             // 
             this.listCartas.FormattingEnabled = true;
             this.listCartas.ItemHeight = 16;
-            this.listCartas.Location = new System.Drawing.Point(573, 12);
+            this.listCartas.Location = new System.Drawing.Point(578, 34);
             this.listCartas.Name = "listCartas";
             this.listCartas.Size = new System.Drawing.Size(173, 324);
             this.listCartas.TabIndex = 7;
             // 
             // butListaCartas
             // 
-            this.butListaCartas.Location = new System.Drawing.Point(394, 12);
+            this.butListaCartas.Location = new System.Drawing.Point(394, 34);
             this.butListaCartas.Name = "butListaCartas";
             this.butListaCartas.Size = new System.Drawing.Size(126, 46);
             this.butListaCartas.TabIndex = 8;
@@ -114,23 +104,20 @@ namespace Win_Bootstrap_Cartas
             this.Controls.Add(this.butListaCartas);
             this.Controls.Add(this.listCartas);
             this.Controls.Add(this.butNumCartas);
-            this.Controls.Add(this.chkRandom);
             this.Controls.Add(this.butCartaR);
             this.Controls.Add(this.butSacarCarta);
-            this.Controls.Add(this.butAceptar);
+            this.Controls.Add(this.butBarajar);
             this.Name = "Form1";
             this.Text = "Juego de Cartas Freak";
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button butAceptar;
+        private System.Windows.Forms.Button butBarajar;
         private System.Windows.Forms.Button butSacarCarta;
         private System.Windows.Forms.Button butCartaR;
-        private System.Windows.Forms.CheckBox chkRandom;
         private System.Windows.Forms.Button butNumCartas;
         private System.Windows.Forms.ListBox listCartas;
         private System.Windows.Forms.Button butListaCartas;

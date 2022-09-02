@@ -17,12 +17,13 @@ namespace Win_Bootstrap_Cartas
         public Form1()
         {
             InitializeComponent();
-            
+            updateList();
         }
 
         private void butCartaR_Click(object sender, EventArgs e)
         {          
             MessageBox.Show(baraja.CogeCartaAlAzar().ToString());
+            updateList();
         }
 
         private void butNumCartas_Click(object sender, EventArgs e)
@@ -33,16 +34,26 @@ namespace Win_Bootstrap_Cartas
         private void butSacarCarta_Click(object sender, EventArgs e)
         {
             MessageBox.Show(baraja.RobarCarta().ToString());
+            updateList();
         }
 
         private void butListaCartas_Click(object sender, EventArgs e)
+        {
+            updateList();
+        }
+
+        private void butBarajar_Click(object sender, EventArgs e)
+        {
+            baraja.Barajar();
+            updateList();
+        }
+        private void updateList()
         {
             listCartas.Items.Clear();
             for (int i = 0; i < baraja.NumeroCartas(); i++)
             {
                 listCartas.Items.Add(baraja.lbBaraja[i].ToString());
             }
-            
         }
     }
 }
